@@ -1,5 +1,6 @@
 package de.kad.intech4.parties.server;
 
+
 import javax.xml.ws.Endpoint;
 
 public class Server {

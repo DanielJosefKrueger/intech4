@@ -56,7 +56,7 @@ public class Party{
 	}
 	
 	public int amountOfGuest(){
-		return guestlist.length;
+		return indexGuest+1;
 	}
 	
 	public String[] getGuestList(){
@@ -65,7 +65,7 @@ public class Party{
 	
 	public boolean invite(String guest){
 
-	    if(this.guestlist.length >= max){
+	    if(this.indexGuest < max){
             System.out.println("Gast " + guest + " wurde erfolgreich eingetragen!");
             guestlist[indexGuest++]=guest;
             return true;
